@@ -1,13 +1,60 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #303030;
-    position: relative;
+@font-face {
+    font-family: 'Richy';
+    src: url('fonts/Richy.otf') format('opentype');
+}
+.richy {
+  font-family: 'Richy', sans-serif;
+  font-style: italic;
 }
 @font-face {
-    font-family: 'FutureHistory';
-    src: url('fonts/futurehistorydemo.otf') format('opentype');
+  font-family: 'Bellefair';
+  src: url('fonts/Bellefair-Regular.ttf') format('truetype');
+}
+.site-title {
+  font-family: 'Richy', sans-serif;
+  font-size: 340px;
+  text-align: center;
+  font-weight: normal;
+  color: #1c1c1c;
+  margin: 40px 0;
+  font-style: italic;
+}
+.works {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 70px 0 50px 0;
+  color: #1c1c1c;
+}
+.footer {
+  font-family: 'Bellefair', sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1; /* 好みに応じて変更可 */
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 500; /* 必要に応じて他要素と調整 */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 上の境界をわずかに強調 */
+}
+
+
+.workstree {
+text-align: center;
+margin: 100px 0 200px 0;
+}
+.underline-link {
+  display: inline-block;
+  border-bottom: 2px solid #343434;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 40px;
+  color: #343434;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* スムーズなアニメーション */
+}
+.underline-link:hover {
+  transform: scale(1.1); /* 1.1倍に拡大 */
 }
