@@ -32,7 +32,6 @@ body {
   position: relative;
   padding: 20px;
 }
-
 .works::before,
 .works::after {
   content: '';
@@ -79,4 +78,10 @@ body {
   text-align: center;
   padding: 10px 0;
   font-size: clamp(12px, 2vw, 14px);
+  box-shadow: 0 0px 14px rgba(0, 0, 0, 0.1);
+}
+.richy {
+  font-family: 'Richy', sans-serif;
+  font-size: clamp(12px, 2vw, 14px);
+  font-style: italic;  
 }
