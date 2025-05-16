@@ -1,23 +1,21 @@
 body {
   background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
 }
 
-
-
 @font-face {
-    font-family: 'Richy';
-    src: url('fonts/Richy.otf') format('opentype');
+  font-family: 'Richy';
+  src: url('fonts/Richy.otf') format('opentype');
 }
 @font-face {
   font-family: 'Bellefair';
   src: url('fonts/Bellefair-Regular.ttf') format('truetype');
 }
 
-
-
 .site-title {
   font-family: 'Richy', sans-serif;
-  font-size: 340px;
+  font-size: clamp(80px, 10vw, 340px);
   text-align: center;
   font-weight: normal;
   color: #1c1c1c;
@@ -25,17 +23,16 @@ body {
   font-style: italic;
 }
 
-
-
 .works {
   font-family: 'Bellefair', sans-serif;
-  font-size: 40px;
+  font-size: clamp(20px, 4vw, 40px);
   text-align: center;
   margin: 70px 0 50px 0;
   color: #1c1c1c;
   position: relative;
   padding: 20px;
 }
+
 .works::before,
 .works::after {
   content: '';
@@ -43,7 +40,7 @@ body {
   top: 50%;
   width: 40%;
   height: 1px;
-  background-color: #000; /* 線の色 */
+  background-color: #000;
   transform: translateY(-50%);
 }
 .works::before {
@@ -52,24 +49,24 @@ body {
 .works::after {
   right: 0;
 }
+
 .workstree {
-text-align: center;
-margin: 100px 0 200px 0;
+  text-align: center;
+  margin: 50px 0;
 }
+
 .underline-link {
   display: inline-block;
   border-bottom: 1px solid #343434;
   font-family: 'Bellefair', sans-serif;
-  font-size: 40px;
+  font-size: clamp(16px, 3vw, 40px);
   color: #343434;
   text-decoration: none;
-  transition: transform 0.3s ease; /* スムーズなアニメーション */
+  transition: transform 0.3s ease;
 }
 .underline-link:hover {
-  transform: scale(1.1); /* 1.1倍に拡大 */
+  transform: scale(1.1);
 }
-
-
 
 .footer {
   font-family: 'Bellefair', sans-serif;
@@ -77,16 +74,9 @@ margin: 100px 0 200px 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f1f1f1; /* 好みに応じて変更可 */
+  background-color: #f1f1f1;
   color: #333;
   text-align: center;
   padding: 10px 0;
-  font-size: 14px;
-  z-index: 500; /* 必要に応じて他要素と調整 */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 上の境界をわずかに強調 */
-}
-.richy {
-  font-family: 'Richy', sans-serif;
-  font-style: italic;
-  font-size: 20px;
+  font-size: clamp(12px, 2vw, 14px);
 }
