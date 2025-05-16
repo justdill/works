@@ -1,15 +1,20 @@
+body {
+  background-color: #f3f3f3;
+}
+
+
+
 @font-face {
     font-family: 'Richy';
     src: url('fonts/Richy.otf') format('opentype');
-}
-.richy {
-  font-family: 'Richy', sans-serif;
-  font-style: italic;
 }
 @font-face {
   font-family: 'Bellefair';
   src: url('fonts/Bellefair-Regular.ttf') format('truetype');
 }
+
+
+
 .site-title {
   font-family: 'Richy', sans-serif;
   font-size: 340px;
@@ -19,13 +24,53 @@
   margin: 40px 0;
   font-style: italic;
 }
+
+
+
 .works {
   font-family: 'Bellefair', sans-serif;
   font-size: 40px;
   text-align: center;
   margin: 70px 0 50px 0;
   color: #1c1c1c;
+  position: relative;
+  padding: 20px;
 }
+.works::before,
+.works::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #000; /* 線の色 */
+  transform: translateY(-50%);
+}
+.works::before {
+  left: 0;
+}
+.works::after {
+  right: 0;
+}
+.workstree {
+text-align: center;
+margin: 100px 0 200px 0;
+}
+.underline-link {
+  display: inline-block;
+  border-bottom: 1px solid #343434;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 40px;
+  color: #343434;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* スムーズなアニメーション */
+}
+.underline-link:hover {
+  transform: scale(1.1); /* 1.1倍に拡大 */
+}
+
+
+
 .footer {
   font-family: 'Bellefair', sans-serif;
   position: fixed;
@@ -40,21 +85,8 @@
   z-index: 500; /* 必要に応じて他要素と調整 */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 上の境界をわずかに強調 */
 }
-
-
-.workstree {
-text-align: center;
-margin: 100px 0 200px 0;
-}
-.underline-link {
-  display: inline-block;
-  border-bottom: 2px solid #343434;
-  font-family: 'Bellefair', sans-serif;
-  font-size: 40px;
-  color: #343434;
-  text-decoration: none;
-  transition: transform 0.3s ease; /* スムーズなアニメーション */
-}
-.underline-link:hover {
-  transform: scale(1.1); /* 1.1倍に拡大 */
+.richy {
+  font-family: 'Richy', sans-serif;
+  font-style: italic;
+  font-size: 20px;
 }
