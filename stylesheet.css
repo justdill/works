@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f3f3;
+  background-color: #f1f1f1;
   margin: 0;
   padding: 0;
 }
@@ -12,17 +12,16 @@ body {
   font-family: 'Bellefair';
   src: url('fonts/Bellefair-Regular.ttf') format('truetype');
 }
-
 .site-title {
   font-family: 'Richy', sans-serif;
-  font-size: clamp(80px, 10vw, 340px);
+  font-size: clamp(120px, 18vw, 340px);
   text-align: center;
   font-weight: normal;
+  color: transparent;
+  margin: 80px 0;
   color: #1c1c1c;
-  margin: 40px 0;
   font-style: italic;
 }
-
 .works {
   font-family: 'Bellefair', sans-serif;
   font-size: clamp(20px, 4vw, 40px);
@@ -69,7 +68,7 @@ body {
 
 .footer {
   font-family: 'Bellefair', sans-serif;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
